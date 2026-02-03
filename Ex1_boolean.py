@@ -30,8 +30,12 @@ print("-------------------------------------------\n"
 #    (wallet is strictly greater than price), and False otherwise. Print this variable.
 
 # Write your code below:
-
-
+wallet_balance= 60
+item_price= 40
+wallet_balance >= item_price
+print(f"i can afford this {wallet_balance >= item_price}")
+change_available = wallet_balance >item_price
+print(f"change available:{change_available}")
 # -------------------------------------------
 # Task 2: Security Check (Strings & Inequality)
 # -------------------------------------------
@@ -47,6 +51,11 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+username = "admin"
+input_name = "Admin"
+username  == input_name
+print(f"string match {username == input_name}")
+print(f"they are indeed different string { username != input_name}")
 
 # -------------------------------------------
 # Task 3: The Bouncer (Input & Types)
@@ -63,8 +72,9 @@ print("\n-------------------------------------------\n"
 # 3. Print: "Access granted: [True/False]" using your variable.
 
 # Write your code below:
-
-
+age= int(input("Enter your age: "))
+can_enter = age >= 18 
+print(f"Access granted {can_enter}")
 # -------------------------------------------
 # SAVING YOUR WORK
 # -------------------------------------------
@@ -97,7 +107,9 @@ print("\n-------------------------------------------\n"
 # Hint: You can use: (x > 0) and (x <= 10)
 
 # Write your code below:
-
+num=int(input("Enter a number between 1 to 10:  "))
+validation = num > 0 and num <= 10
+print(f"Number valid {validation}")
 
 # Extension 2: The "Either/Or" (The 'or' Operator)
 # -------------------------------------------
@@ -115,6 +127,9 @@ print("\n-------------------------------------------\n"
 # Correct: if colour == "Red" or colour == "Blue"
 
 # Write your code below:
+colour =input("What's your favourite colour: ").upper()
+valid_colour= (colour=="RED") or (colour=="BLUE")
+print(f"either colour is red or blue {valid_colour}")
 
 
 # Extension 3: Even Number Detector (Modulus %)
@@ -131,6 +146,9 @@ print("\n-------------------------------------------\n"
 # Hint: 5 % 2 gives 1 (Odd). 4 % 2 gives 0 (Even).
 
 # Write your code below:
+num1 = 2
+remainder =num1 % 2
+print("is the reminder is equal to 0? {remainder == 0)")
 
 
 # -------------------------------------------
